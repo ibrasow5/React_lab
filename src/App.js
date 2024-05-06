@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Message from "./components/Message";
+import Team from "./components/Team";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Message name="Daffy Duck" job="engineer" age={20}/>
+       <Team name="Liverpool" title={6}/>
+       <Team name="Real Madrid" title={14}/>
+       <Team name="PSG" title={0}/>
     </div>
   );
 }
